@@ -1,0 +1,47 @@
+body {
+    background-color: lightskyblue;
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 50px 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(108, 108, 108, 0.484);
+    width: 225px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cardParent {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px;
+}
+
+.title {
+    color: black;
+}
+
+h3 {
+    color: aqua;
+}
+
+.madeby {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
