@@ -1,24 +1,43 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksand.ttf') format('truetype');
+}
+
 body {
     background-color: lightskyblue;
+    padding: 7em 7em;
+    color: white;
 }
 
 h1 {
     color: white;
-    font-size: 75px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: lighter;
+    font-size: 55px;
+    font-family: 'Montserrat';
+    font-weight: Bold;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 .card {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     color: black;
-    padding: 50px 10px;
+    padding: 40px 10px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(108, 108, 108, 0.484);
-    width: 225px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    font-family: 'Quicksand';
+    font-size: 15px;
     transition: transform 0.3s ease;
 }
 
@@ -29,8 +48,10 @@ h1 {
 
 .cardParent {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-evenly;
-    margin: 75px;
+    padding: 2em;
 }
 
 .title {
@@ -41,7 +62,93 @@ h3 {
     color: aqua;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 100px;
+}
+
+.opening h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.opening h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.opening p {
+    padding-top: 14px;
+    padding-bottom: 30px;
+    font-family: "Quicksand";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+.touch {
+    color: white;
+    background: rgb(0, 162, 255);
+    border-radius: 30px;
+    padding: 18px 28px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.photo {
+    margin: 0;
+    width: 400px;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 .madeby {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hobby {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sky {
+    text-align: center;
+}
+
+.name {
+    color: white;
+    background: rgb(167, 217, 248);
+    border-radius: 7px;
+    padding: 10px 12px;
+    font-family: 'Quicksand';
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .photo {
+        padding-top: 30px;
+        width: 300px;
+        margin: 0 auto;
+    }
 }
